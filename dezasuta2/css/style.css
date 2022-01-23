@@ -1,0 +1,99 @@
+@charset "utf-8";
+.box{
+    display:flex;
+    justify-content: space-between;
+    width: 960px;
+    margin:0 auto;
+}
+
+
+.box div{
+    background-color: blue;
+    width:300px;
+    height: 300px;   
+    
+}
+
+.box2{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 960px;
+    margin:0 auto;
+}
+
+.box2 div{
+    background-color: red;
+    width:300px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.練習{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: #000;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ",
+        "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+    max-width: 960px;
+    display: flex;
+    margin:0 auto;
+}
+
+h1{
+    font-size: 30px;
+    width: 30%;
+}
+
+
+ul{
+    margin: 0 ;
+    padding: 0 ;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1%;
+  }
+ul li{
+    list-style: none;
+    width: 10%;
+    min-width: 90px;
+    padding: 5% 5% ;
+    }
+ul li:not(:last-child){
+    border-right:2px solid #ddd;
+    }
+
+@media screen and (max-width:767px){
+    .練習{
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        display: block;
+        margin:0 auto;
+    }
+    
+    h1{
+        font-size: 30px;
+        width: 30%;
+    }
+    
+    
+    ul{
+        margin: 0 ;
+        padding: 0 ;
+        margin-top: 1%;
+        display: block;
+      }
+    ul li{
+        list-style: none;
+        width: 10%;
+        min-width: 90px;
+        padding: 5% 5% ;
+        border-bottom: 2px solid #ddd;
+        }
+    ul li:not(:last-child){
+        border-right:none;
+        }
+    
+}
